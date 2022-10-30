@@ -17,11 +17,6 @@ public class AlarmFlagManager {
     prefs.edit().putLong(ALARM_FLAG_KEY, alarmId).apply();
   }
 
-  /**
-   * ?ŒëŒ ê°ì²´??IDë¡?ë³€?˜í•œ IDë¥?ë°˜í™˜?œë‹¤.
-   *
-   * ?´ë•Œ `Timer`??ê²½ìš°??IDê°€ 0?´ë?ë¡?ë°˜í™˜ê°’ë„ 0???˜ì–´ ë¬¸ì œê°€ ?†ë‹¤.
-   */
   static private long getActualIdFrom(long callbackId) {
     return (long) Math.floor(callbackId / 1.0);
   }
