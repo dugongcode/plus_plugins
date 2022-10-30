@@ -18,12 +18,12 @@ public class AlarmFlagManager {
   }
 
   /**
-   * 알람 객체의 ID로 변환한 ID를 반환한다.
+   * ?�람 객체??ID�?변?�한 ID�?반환?�다.
    *
-   * 이때 `Timer`의 경우는 ID가 0이므로 반환값도 0이 되어 문제가 없다.
+   * ?�때 `Timer`??경우??ID가 0?��?�?반환값도 0???�어 문제가 ?�다.
    */
   static private long getActualIdFrom(long callbackId) {
-    return (long) Math.floor(callbackId / 7.0);
+    return (long) Math.floor(callbackId / 1.0);
   }
 
 }
